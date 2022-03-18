@@ -1,0 +1,19 @@
+.footerBar {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.socialMedia svg {
+    color: white;
+    margin: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.footerBar p {
+    color: white;
+}

@@ -1,0 +1,86 @@
+ .headerBar {
+     width: 100%;
+     height: 100px;
+     background-color:black;
+     display: flex;
+     flex-direction: row;
+     border-bottom: white 300px;
+ }
+ .headerBar .leftSide {
+     flex: 50%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     padding-left: 150px;
+ }
+ .headerBar .leftSide img {
+     width: 70px;
+     border-radius: 20px;
+ }
+ .headerBar .rightSide {
+     flex: 50%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .headerBar a {
+     color: white;
+     text-decoration: none;
+     margin: 20px;
+ }
+ .headerBar .rightSide button {
+     display: inherit;
+ }
+ .headerBar .rightSide svg {
+     font-size: 40px;
+ }
+.headerBar #open {
+    padding-left: 0px;
+}
+.headerBar #open img {
+    display : none;
+}
+.headerBar #close img {
+    display : inherit;
+}
+.headerBar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+}
+.headerBar #close .hiddenLinks {
+    display: none;
+}
+.headerBar #open a {
+    width: 70px;
+    margin: 5px;
+}
+
+@media only screen and (max-width : 900px) {
+    .headerBar .rightSide a {
+        width: 70px;
+    }
+    .headerBar .leftSide {
+        padding-left: 50px;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .headerBar .rightSide a {
+        display : none;
+    }
+    .headerBar .rightSide {
+        justify-content: center;
+        padding-right: 50px;
+    }
+    .headerBar .rightSide button {
+        display: inherit;
+    }
+ }
+ @media only screen and (min-width : 600px) {
+     .headerBar .rightSide button {
+         display: none;
+     }
+     .hiddenLinks {
+         display: none;
+     }
+}
