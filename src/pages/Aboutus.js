@@ -7,7 +7,7 @@ export default function Aboutus () {
         <div className="aboutUs">
             <div className="aboutUsTop" style={{ backgroundImage : `url(${Abouttop})`}}></div>
             <div className="aboutUsBottom">
-                <h1>About Us</h1>
+                <h1>What we are ?</h1>
                 <div>
                     <p>
                         Foodie Family is created with the intention to help you make the right food choice every time. We cover all aspects of basic nutrition, nutrients, hygienic practices, exercises and some recipes.

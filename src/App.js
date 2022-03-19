@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Footerbar from './components/Footerbar';
 import Menu from './pages/Menu';
 import Aboutus from './pages/Aboutus';
+import Contactus from './pages/Contactus';
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/menu' element={<Menu/>} />
-          <Route path='/about' element={<Aboutus/>} />
+          <Route path='/Aboutus' element={<Aboutus/>} />
+          <Route path='/Contactus' element={<Contactus/>} />
         </Routes>
       </Router>
       <Footerbar />
