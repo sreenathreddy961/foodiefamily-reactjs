@@ -24,12 +24,12 @@ export default function Contactus () {
     const bookAppointment = (e) => {
         e.preventDefault();
         send(
-            'service_qqz2rw2',
-            'template_y6it97i',
+            'service_zjg29zh',
+            'template_lefyhjq',
             {name, email, mobileNumber, message},
-            'PRNFQCZhRJi0sY-sB'
+            'kQU8XoKz1t8EpwFvC'
         ).then((response) => {
-            console.log("Email sent succesfully", response.text)
+            console.log("Email sent succesfully")
         }).catch ((err) => {
             console.log("Failed to send email", err)
         })
@@ -48,7 +48,7 @@ export default function Contactus () {
                     <label htmlFor="name">Full Name</label>
                     <input name="name" type="text" value={name} onChange = {handleName} placeholder="Enter your Name" required/>
                     <label htmlFor="email">Email</label>
-                    <input name="email" type="text" value={email} onChange = {handleEmail} placeholder="Enter your Email" />
+                    <input name="email" type="text" value={email} onChange = {handleEmail} placeholder="Enter your Email" required/>
                     <label htmlFor="mobileNumber">Mobile</label>
                     <input name="mobileNumber" type="text" value={mobileNumber} onChange = {handleMobileNumber} placeholder="Enter your Ph No." required/>
                     <label htmlFor="message">Message</label>
