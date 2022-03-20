@@ -2,24 +2,30 @@ import React, { useState } from "react";
 import "../styles/Contactus.css";
 import ContactusImage from "../assets/Contactusimage.jpg";
 import {send} from "emailjs-com";
+import { toast } from 'react-toastify';
 
 export default function Contactus () {
-    const [name, set_name] = useState('');
-    const [email, set_email] = useState('');
-    const [mobileNumber, set_mobileNumber] = useState('');
-    const [message, set_message] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [mobileNumber, setMobileNumber] = useState('');
+    const [message, setMessage] = useState('');
+    const [successMsg , setSuccessMsg] = useState(false);
 
     const handleName = (e) => {
-        set_name(e.target.value)
+        setName(e.target.value);
+        setSuccessMsg(false);
     }
     const handleEmail = (e) => {
-        set_email(e.target.value)
+        setEmail(e.target.value);
+        setSuccessMsg(false);
     }
     const handleMobileNumber = (e) => {
-        set_mobileNumber(e.target.value)
+        setMobileNumber(e.target.value);
+        setSuccessMsg(false);
     }
     const handleMessage = (e) => {
-        set_message(e.target.value)
+        setMessage(e.target.value);
+        setSuccessMsg(false);
     }
     const bookAppointment = (e) => {
         e.preventDefault();
@@ -29,14 +35,20 @@ export default function Contactus () {
             {name, email, mobileNumber, message},
             'kQU8XoKz1t8EpwFvC'
         ).then((response) => {
-            console.log("Email sent succesfully")
+            toast.success("Appointment booked succesfully", {
+                position: toast.POSITION.TOP_RIGHT
+            });
+            setSuccessMsg(true);
         }).catch ((err) => {
+            toast.error("Appointment booking failed", {
+                position: toast.POSITION.TOP_RIGHT
+            });
             console.log("Failed to send email", err)
         })
-        set_name('');
-        set_email('');
-        set_mobileNumber('');
-        set_message('');
+        setName('');
+        setEmail('');
+        setMobileNumber('');
+        setMessage('');
     }
 
     return (
@@ -53,6 +65,7 @@ export default function Contactus () {
                     <input name="mobileNumber" type="text" value={mobileNumber} onChange = {handleMobileNumber} placeholder="Enter your Ph No." required/>
                     <label htmlFor="message">Message</label>
                     <textarea name="message" value={message} onChange = {handleMessage} placeholder="Enter your message" rows="7"></textarea>
+                    <p id={successMsg ? "openSuccessMsg" : "closeSuccessMsg"}>Succesfully booked appointment</p>
                     <button type="submit">Submit</button>
                 </form>
             </div>

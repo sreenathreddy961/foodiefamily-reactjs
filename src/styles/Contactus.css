@@ -71,3 +71,11 @@ form button {
     font-size: 15px;
     border-radius: 20px;
 }
+#openSuccessMsg {
+    display: block;
+    color: rgb(11, 245, 23);
+    text-align: left;
+}
+#closeSuccessMsg {
+    display: none;
+}

@@ -6,6 +6,9 @@ import Homebg from '../assets/Homebg.jpg';
 export default function Home() {
     return (
         <div className="home" style={{ backgroundImage: `url(${Homebg})` }}>
+            <marquee style={{ direction:"right", height:"100", width:"100%", bgcolor:"white", color:"red" }}>
+                We have an offer for the first 100 slots, Hurry up & book your appointment
+            </marquee>
             <div className="app_container">
                 <div class="container d-flex flex-wrap">
                     <div class="wrapper_card">
@@ -18,7 +21,7 @@ export default function Home() {
                                 <p>Book Appoinment, Insure Good Health -<cite>Foodie Family</cite></p>
                             </div>
                             <div>
-                                <a href="/" class="btn btn-success btn-lg">Book Appoinment</a>
+                                <a href="/Contactus" class="btn btn-success btn-lg">Book Appoinment</a>
                             </div>
                             <div></div>
                         </div>
