@@ -1,6 +1,6 @@
 .aboutUs {
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
 }
@@ -39,6 +39,7 @@
     .aboutUsBottom p {
         width: 500px;
         font-size: medium;
+        text-align: left;
     }
     .aboutUs .aboutUsBottom h1 {
         font-weight: 400;
@@ -55,6 +56,7 @@
     .aboutUsBottom p {
         width: 300px;
         font-size: medium;
+        text-align: left;
     }
     .aboutUs .aboutUsBottom h1 {
         font-weight: 400;
@@ -71,6 +73,7 @@
     .aboutUsBottom p {
         width: 1200px;
         font-size: medium;
+        text-align: left;
     }
     .aboutUs .aboutUsBottom h1 {
         font-weight: 400;

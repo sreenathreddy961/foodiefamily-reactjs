@@ -22,7 +22,7 @@ export default function Home() {
                                 <p style={{ textAlign:"center"}}>Book Appoinment, Insure Good Health -<cite>Foodie Family</cite></p>
                             </div>
                             <div>
-                                <Link to="/Contactus" className="btn btn-success btn-lg">Book Appoinment</Link>
+                                <Link to="/Contactus" className="btn btn-success btn-lg">Book Appointment</Link>
                             </div>
                             <div></div>
                         </div>

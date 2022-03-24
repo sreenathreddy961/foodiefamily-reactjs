@@ -4,8 +4,8 @@ export default function Menuitems ({name, image, price}) {
     return (
         <div className="menuItem">
             <div style={{ backgroundImage : `url(${image})`}}></div>
-            <h1>{name}</h1>
-            <p>₹{price}</p>
+            <h4>{name}</h4>
+            <p className="badge">₹{price}</p>
         </div>
     )
 }
