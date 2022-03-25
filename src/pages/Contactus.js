@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../styles/Contactus.css";
 import ContactusImage from "../assets/Contactusimage.jpg";
 import {send} from "emailjs-com";
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contactus () {
     const [name, setName] = useState('');
@@ -48,16 +49,16 @@ export default function Contactus () {
         e.preventDefault();
         send(
             'service_zjg29zh',
-            'template_lefyhjq',
+            'template_lefyhj',
             {name, email, mobileNumber, state, preferedLanguage, message},
             'kQU8XoKz1t8EpwFvC'
         ).then((response) => {
-            toast.success("Appointment booked succesfully", {
+            toast.success("Succesfully booked appointment", {
                 position: toast.POSITION.TOP_RIGHT
             });
             setSuccessMsg(true);
         }).catch ((err) => {
-            toast.error("Appointment booking failed", {
+            toast.error("Something went wrong", {
                 position: toast.POSITION.TOP_RIGHT
             });
             setErrorMsg(true);
@@ -90,9 +91,10 @@ export default function Contactus () {
                     <label htmlFor="message">Message</label>
                     <textarea name="message" value={message} onChange = {handleMessage} placeholder="Enter your message" rows="7"></textarea>
                     <p id={successMsg ? "openSuccessMsg" : "closeSuccessMsg"} className="badge">Succesfully booked appointment</p>
-                    <p id={errorMsg ? "openErrorMsg" : "closeErrorMsg"} className="badge">Something went wrong, please check your mail Id and book now</p>
+                    <p id={errorMsg ? "openErrorMsg" : "closeErrorMsg"} className="badge">Please check your mail Id and book now</p>
                     <button type="submit">Submit</button>
                 </form>
+                <ToastContainer />
             </div>
         </div>
     )

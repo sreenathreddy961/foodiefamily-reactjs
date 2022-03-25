@@ -13,10 +13,17 @@ export default function App() {
       <Router>
         <Headerbar />
         <Routes>
+          {/* <Redirect from = "/menu" to = "/"></Redirect>
+          <Redirect from = "/Aboutus" to = "/"></Redirect>
+          <Redirect from = "/Contactus" to = "/"></Redirect> */}
+
           <Route path='/' element={<Home/>} />
           <Route path='/menu' element={<Menu/>} />
           <Route path='/Aboutus' element={<Aboutus/>} />
           <Route path='/Contactus' element={<Contactus/>} />
+          {/* <Route>
+            <h1>404 - Not found</h1>
+          </Route> */}
         </Routes>
       </Router>
       <Footerbar />
