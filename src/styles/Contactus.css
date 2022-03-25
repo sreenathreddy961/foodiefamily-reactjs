@@ -76,6 +76,7 @@ form button {
     color: rgb(11, 245, 23);
     text-align: left;
     font-size: 0.95em;
+    cursor: pointer;
 }
 #closeSuccessMsg, #closeErrorMsg {
     display: none;
@@ -85,4 +86,5 @@ form button {
     color: rgb(196, 92, 97);
     text-align: left;
     font-size: 0.95em;
+    cursor: pointer;
 }
