@@ -49,7 +49,7 @@ export default function Contactus () {
         send(
             'service_zjg29zh',
             'template_lefyhjq',
-            {name, email, mobileNumber, message},
+            {name, email, mobileNumber, state, preferedLanguage, message},
             'kQU8XoKz1t8EpwFvC'
         ).then((response) => {
             toast.success("Appointment booked succesfully", {
