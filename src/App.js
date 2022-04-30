@@ -6,6 +6,7 @@ import Footerbar from './components/Footerbar';
 import Menu from './pages/Menu';
 import Aboutus from './pages/Aboutus';
 import Contactus from './pages/Contactus';
+import BookAppointment from './pages/BookAppointment';
 
 export default function App() {
   return (
@@ -21,12 +22,13 @@ export default function App() {
           <Route path='/menu' element={<Menu/>} />
           <Route path='/Aboutus' element={<Aboutus/>} />
           <Route path='/Contactus' element={<Contactus/>} />
+          <Route path='/BookAppointment' element={<BookAppointment/>} />
           {/* <Route>
             <h1>404 - Not found</h1>
           </Route> */}
         </Routes>
+        <Footerbar />
       </Router>
-      <Footerbar />
     </div>
   );
 }

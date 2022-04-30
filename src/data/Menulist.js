@@ -22,6 +22,6 @@ export const menuList = [
     {
         name : "Yearly Diet",
         image : YearlyImage,
-        price: 9999,
+        price: 12999,
     }
 ]
