@@ -1,0 +1,90 @@
+.aboutUs {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+}
+.aboutUsTop {
+    width: 90%;
+    height: 45%;
+    margin-left: 5%;
+    margin-top: 1%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.aboutUsBottom {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    margin-top: 50px;
+    align-items: center;
+}
+@media only screen and (max-width : 1200px) { 
+    .aboutUsBottom p {
+        width: 700px;
+        font-size: medium;
+    }
+    .aboutUs .aboutUsBottom h1 {
+        font-weight: 400;
+        font-size: 50px;
+        color: black;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        transform: translateY(-40px);
+    }
+}
+@media only screen and (max-width : 900px) { 
+    .aboutUsBottom p {
+        width: 500px;
+        font-size: medium;
+        text-align: left;
+    }
+    .aboutUs .aboutUsBottom h1 {
+        font-weight: 400;
+        font-size: 48px;
+        color: black;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        transform: translateY(-40px);
+    }
+}
+@media only screen and (max-width : 600px) { 
+    .aboutUsBottom p {
+        width: 300px;
+        font-size: medium;
+        text-align: left;
+    }
+    .aboutUs .aboutUsBottom h1 {
+        font-weight: 400;
+        font-size: 40px;
+        color: black;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        transform: translateY(-40px);
+    }
+}
+@media only screen and ( min-width : 600px) {
+    .aboutUsBottom p {
+        width: 800px;
+        font-size: medium;
+        text-align: left;
+    }
+    .aboutUs .aboutUsBottom h1 {
+        font-weight: 400;
+        font-size: 70px;
+        color: black;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        transform: translateY(-40px);
+    }
+}

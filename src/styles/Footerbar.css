@@ -1,0 +1,47 @@
+.footerBar {
+    height: 250px;
+    background-color: black;
+    padding-top: 10px;
+    margin-top: 100px
+}
+/* .footerBarRight {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align : left;
+    padding-top: 10px;
+    color: white;
+} */
+.socialMedia svg, .socialMedia h2 {
+    color: rgb(189, 185, 185);
+    margin: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.footerBar .footerBarLeft p {
+    color: rgb(189, 185, 185);
+}
+@media only screen and (max-width:1200px) {
+    .footerBar {
+        height: 250px;
+        background-color: black;
+        padding-top: 10px;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width:900px) {
+    .footerBar {
+        height: 250px;
+        background-color: black;
+        padding-top: 10px;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .footerBar {
+        height: 250px;
+        background-color: black;
+        padding-top: 10px;
+        margin-top: 100px;
+    }
+}
