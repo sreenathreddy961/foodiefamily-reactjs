@@ -189,7 +189,6 @@ const BookAppointment = () => {
         setActiveStep(activeStep + 1);
 
         if (activeStep === steps.length - 1) {
-            console.log(data);
             const name = data.fullName;
             const email = data.emailAddress;
             const mobileNumber = data.phoneNumber;
@@ -208,13 +207,12 @@ const BookAppointment = () => {
                     position: toast.POSITION.TOP_RIGHT
                 });
                 setOpenModal(true);
-                console.log("Appointment booked successfully", response);
                 data = "";
+                console.log("Appointment booked successfully");
             }).catch((err) => {
                 toast.error("Something went wrong", {
                     position: toast.POSITION.TOP_RIGHT
                 });
-                // setActiveStep(activeStep - 1);
                 console.log("Failed to send email", err)
             })
             setActiveStep(activeStep - 1);

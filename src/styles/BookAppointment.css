@@ -20,7 +20,18 @@ form {
     flex-direction: column;
     height: auto;
     padding: 30px;
-    width: auto;
+    width: 95%;
+}
+@media only screen and ( min-width : 600px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        width: 50%;
+        margin-left: 24%;
+    }
+
 }
 .MuiInputLabel-formControl {
     top: 7px !important;
