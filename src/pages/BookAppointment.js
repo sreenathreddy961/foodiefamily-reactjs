@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "../styles/BookAppointment.css";
 import ThankYou from "../assets/brandLogo_V1.1.jpg";
 import Dialog from '@material-ui/core/Dialog';
+import {useLocation} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -221,6 +222,8 @@ const BookAppointment = () => {
 
     const handleBack = () => { setActiveStep(activeStep - 1); };
     const handleClose = () => { setOpenModal(false); };
+
+    const location = useLocation();
 
     return (
         <div>

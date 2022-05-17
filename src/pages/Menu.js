@@ -4,6 +4,7 @@ import { menuList } from "../data/Menulist";
 import Menuitems from "../components/Menuitems";
 
 export default function Menu() {
+
     return (
         <div className="menu">
             <div className="menuTitle">
